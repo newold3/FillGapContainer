@@ -13,11 +13,7 @@ func _ready() -> void:
 
 
 func _sort_children():
-	var children = []
-
-	for child in get_children():
-		if child is Control:
-			children.append(child)
+	var children = get_children()
 	
 	if children.size() > 0:
 		children[0].position = Vector2.ZERO
